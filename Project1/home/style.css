@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    height: 200px;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-image: url(../img/bgHome.png);
+}
+button[type="submit"] {
+    width: 150px;
+    background-color:  #45a049;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+.logo{
+    flex: 1;
+    padding: 15px 0 0 50px ;
+}
+.slogan{
+    flex: 2.5;
+    text-align: center;
+}
+.login-signup{
+    flex: 0.5;
+    padding: 40px  30px 30px 40px;
+}
+.poster{
+    height: 700px;
+    padding:30px 10px 50px 0px;
+}
+.profile{
+    padding:50px;
+    text-align: center;
+}
+.profile > a{
+    padding: 0 10px;
+}
+.kiTen{
+    height: 80px;
+    text-align: center;
+    border-bottom: 2px;
+    border-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line:underline;
+    color: #194120;
+}

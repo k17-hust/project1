@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Tài Chính</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- <?php
+    include "header.php";
+    include "../class/account_class.php";
+?>
+<?php
+    $account = new account();
+    $accountName = Session::get('accountName');
+    //write_profile($accountName);
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $hoTen = $_POST['hoTen'];
+        $sdt = $_POST['sdt'];
+        $cccd = $_POST['cccd'];
+        $diaChi = $_POST['diaChi'];
+        //update_profile($accountName,$hoTen, $sdt, $cccd, $diaChi);
+    }
+?> -->
+    <nav class="nav_container">
+        <ul class="nav_ul">
+            <li class="main"><a href="../main/index.php">Trang chính</a></li>
+            <li class="exchange"><a href="../exchange/index.php">Giao dịch</a></li>
+            <li class="report"><a href="../report/index.php">Báo cáo</a></li>
+            <li class="notification"><a href="../notification/index.php">Thông báo</a></li>
+            <li class="account"><a href="../account/index.php">Tài khoản</a></li>
+            <li class="logout"><a href="../logout.php">Đăng xuất</a></li>
+
+        </ul>
+    </nav>
+    <div class="profile">
+        NAME : Khanh
+        <form action="" method="POST">
+            Họ Tên:   <input name="hoTen" type="text" placeholder=""></br>
+            SĐT :     <input name="sdt"   type="text" placeholder=""></br>
+            CCCD  :   <input name="cccd"   type="text" placeholder=""></br>
+            Địa chỉ : <input name="diaChi"   type="text" placeholder=""></br>
+            <button  type="submit">Lưu lại</button>
+        </form>
+    </div>
+</body>
+</html>
